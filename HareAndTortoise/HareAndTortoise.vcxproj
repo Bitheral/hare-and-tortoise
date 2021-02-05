@@ -27,6 +27,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="hare_actions.txt" />
+    <Text Include="result.txt" />
+    <Text Include="track_config.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="tortoise_actions.txt" />

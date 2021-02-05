@@ -31,6 +31,12 @@
     <Text Include="hare_actions.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="result.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="track_config.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="tortoise_actions.txt">
