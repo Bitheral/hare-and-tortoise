@@ -1,1 +1,9 @@
-﻿  HareAndTortoise.vcxproj -> G:\University\Y1\C++\HareAndTortoise\Debug\HareAndTortoise.exe
+﻿  console.cpp
+F:\University\Y1\C++\HareAndTortoise\HareAndTortoise\console.h(36): warning C4091: 'static ': ignored on left of 'Console::COLOUR' when no variable is declared
+  Source.cpp
+F:\University\Y1\C++\HareAndTortoise\HareAndTortoise\console.h(36): warning C4091: 'static ': ignored on left of 'Console::COLOUR' when no variable is declared
+F:\University\Y1\C++\HareAndTortoise\HareAndTortoise\Source.cpp(98,10): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+F:\University\Y1\C++\HareAndTortoise\HareAndTortoise\Source.cpp(120,21): warning C4018: '<': signed/unsigned mismatch
+F:\University\Y1\C++\HareAndTortoise\HareAndTortoise\Source.cpp(289,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  HareAndTortoise.vcxproj -> F:\University\Y1\C++\HareAndTortoise\Debug\HareAndTortoise.exe
