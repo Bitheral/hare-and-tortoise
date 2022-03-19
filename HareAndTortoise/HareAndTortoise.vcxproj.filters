@@ -31,10 +31,10 @@
     <Text Include="hare_actions.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="result.txt">
+    <Text Include="track_config.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="track_config.txt">
+    <Text Include="result.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

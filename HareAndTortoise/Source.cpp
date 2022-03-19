@@ -233,7 +233,7 @@ public:
 			randomActionIndex = (rand() % actions.size());
 
 			// Checks if the random percentage is higher than the action's chance
-			if (randomPercent > actions[randomActionIndex].chance) {
+			if (randomPercent < actions[randomActionIndex].chance) {
 				// Set selected action to the action where the random
 				// percentage is higher than the action's chance variable.
 				selectedAction = actions[randomActionIndex];
@@ -279,7 +279,7 @@ public:
 };
 
 void drawLineH(int, int, int, char);
-void drawAnimal(int, int, char);
+void drawCharacter(int, int, char);
 void drawTrack(int, int, int, Animal, Animal, AnimalAction);
 
 
@@ -350,7 +350,7 @@ int main()
 
 			// Checks if the current animal position
 			// + the action moves is more than track width
-		} else if (currentAnimal.getPosition() + action.move > track.getWidth()) {
+		} else if (currentAnimal.getPosition() + action.move >= track.getWidth()) {
 
 			// Set current animal position
 			// to track width and end game
@@ -428,17 +428,16 @@ int main()
 
 void drawLineH(int x, int y, int length, char character) {
 
-	// Set console cursor position
-	// to x and y and run a for loop
-	// until it reaches length, to 
-	// output specified character
-	Console::setCursorPosition(y, x);
+	// For number is less than the length
+	// Draw a character at x + i, y and the character
+
 	for (int i = 0; i < length; i++) {
-		cout << character;
+		drawCharacter(x + i, y, character);
 	}
+
 }
 
-void drawAnimal(int x, int y, char character) {
+void drawCharacter(int x, int y, char character) {
 	// Output character at specific x and y
 	Console::setCursorPosition(y, x);
 	cout << character;
@@ -448,8 +447,8 @@ void drawTrack(int x, int y, int length, Animal current, Animal other, AnimalAct
 
 	// Reset base track
 	drawLineH(x, y, length, '.');
-	drawLineH(x, y + 1, length * 2, ' ');
-	drawLineH(x, y + 2, length * 2, ' ');
+	drawLineH(x, y + 1, length * 10, ' ');
+	drawLineH(x, y + 2, length * 10, ' ');
 
 	// Checks if both animals are
 	// in the same location
@@ -459,8 +458,8 @@ void drawTrack(int x, int y, int length, Animal current, Animal other, AnimalAct
 
 		// Draw animal's character at animal's
 		// location
-		drawAnimal(x + current.getPosition(), y, current.getCharacter());
-		drawAnimal(x + other.getPosition(), y, other.getCharacter());
+		drawCharacter(x + current.getPosition(), y, current.getCharacter());
+		drawCharacter(x + other.getPosition(), y, other.getCharacter());
 
 		// Set console cursor to x and y + 1
 		// and output action of current animal
@@ -473,7 +472,7 @@ void drawTrack(int x, int y, int length, Animal current, Animal other, AnimalAct
 
 		// Draw 'B' (for both animals) at either
 		// current or other's position
-		drawAnimal(x + current.getPosition(), y, 'B');
+		drawCharacter(x + current.getPosition(), y, 'B');
 
 		// Set console cursor position to x, y + 1
 		// and output that both animals are in the same location.

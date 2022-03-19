@@ -1,0 +1,5 @@
+Sleep,20,0,
+Big_Hop,20,9,
+Big_Slip,10,-12,
+Small_Hop,30,1,
+Small_Slip,20,-2,

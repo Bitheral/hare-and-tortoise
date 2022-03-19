@@ -1,0 +1,3 @@
+Fast_Plod,50,3,
+Slip,20,-6,
+Slow_Plod,30,1,

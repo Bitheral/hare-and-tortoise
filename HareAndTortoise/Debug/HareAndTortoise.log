@@ -1,6 +1,1 @@
-﻿  Source.cpp
-C:\Users\natha\Desktop\HareAndTortoise\HareAndTortoise\console.h(36): warning C4091: 'static ': ignored on left of 'Console::COLOUR' when no variable is declared
-C:\Users\natha\Desktop\HareAndTortoise\HareAndTortoise\Source.cpp(98,10): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\natha\Desktop\HareAndTortoise\HareAndTortoise\Source.cpp(120,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\natha\Desktop\HareAndTortoise\HareAndTortoise\Source.cpp(289,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  HareAndTortoise.vcxproj -> C:\Users\natha\Desktop\HareAndTortoise\Debug\HareAndTortoise.exe
+﻿  HareAndTortoise.vcxproj -> G:\University\Y1\C++\HareAndTortoise\Debug\HareAndTortoise.exe
