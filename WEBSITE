@@ -1,5 +1,8 @@
 {
   "body":"**Hare and Tortoise** is a small simulator to demonstrate a race between a Hare and a Tortoise",
   "name":"Hare and Tortoise",
-  "order":6
+  "order":6,
+  "tags": [
+    "University"
+  ]
 }
