@@ -1,7 +1,7 @@
 {
   "name": "Hare and Tortoise",
   "body": "**Hare and Tortoise** is a small simulator to demonstrate a race between a Hare and a Tortoise",
-  "order": 3,
+  "order": 4,
   "link": "https://university.bitheral.net/20-21/hare-and-tortoise",
   "tags": [
     "University"
